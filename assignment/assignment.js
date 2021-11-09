@@ -75,3 +75,106 @@ const percentages = [
 ];
 
 console.log(percentages);
+
+//Assignment-6
+console.log("-------Assignment-6--------");
+
+const neighbours = ["India", "China", "pakistan"];
+console.log(neighbours);
+
+neighbours.push("Utopia");
+console.log(neighbours);
+
+neighbours.pop();
+console.log(neighbours);
+
+if (!neighbours.includes("Germany")) {
+  console.log("Probably not a central European country :D");
+}
+
+neighbours[2] = "America";
+console.log(neighbours);
+
+//Assignment-7 and 9
+console.log("-------Assignment-7--------");
+
+const myCountry = {
+  country: "India",
+  capital: "Delhi",
+  language: "Hindi",
+  population: 130,
+  neighbours: ["India", "China", "pakistan"],
+
+  describe: function () {
+    return `${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}`;
+  },
+
+  checkIsland: function () {
+    this.isIsland = this.neighbours.length === 0 ? true : false;
+    return this.isIsland;
+  },
+};
+console.log(myCountry);
+
+//Assignment-8
+console.log("-------Assignment-8--------");
+
+console.log(
+  `${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}`
+);
+
+myCountry.population += 2;
+console.log(myCountry.population);
+myCountry["population"] -= 2;
+console.log(myCountry.population);
+
+//Assignment-9
+console.log("-------Assignment-9--------");
+console.log(myCountry.describe());
+console.log(myCountry.checkIsland());
+
+//Assignment-10
+console.log("-------Assignment-10--------");
+
+for (let i = 1; i <= 50; i++) {
+  console.log(`Voter number ${i} is currently voting`);
+}
+
+//Assignment-11
+console.log("-------Assignment-11--------");
+
+let percentages2 = [];
+for (let i = 0; i < populations.length; i++) {
+  let per = percentageOfWorld1(populations[i]);
+  percentages2.push(per);
+}
+console.log(percentages);
+console.log(percentages2);
+
+//Assignment-12
+console.log("-------Assignment-12--------");
+
+let listOfNeighbours = [
+  ["Canada", "Mexico"],
+  ["Spain"],
+  ["Norway", "Sweden", "Russia"],
+];
+
+for (let i = 0; i < listOfNeighbours.length; i++) {
+  for (let j = 0; j < listOfNeighbours[i].length; j++) {
+    console.log(`Neighbour:${listOfNeighbours[i][j]}`);
+  }
+}
+
+//Assignment-13
+console.log("-------Assignment-13--------");
+
+let percentages3 = [];
+let i = 0;
+while (i < populations.length) {
+  let per = percentageOfWorld1(populations[i]);
+  percentages3.push(per);
+  i++;
+}
+console.log(percentages);
+console.log(percentages3);
