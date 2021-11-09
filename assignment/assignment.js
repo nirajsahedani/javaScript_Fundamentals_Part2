@@ -63,3 +63,15 @@ console.log(canadaPopulation4);
 
 //Assignment-5
 console.log("-------Assignment-5--------");
+
+const populations = [1441, 1231, 186, 1025];
+console.log(populations.length === 4);
+
+const percentages = [
+  percentageOfWorld1(populations[0]),
+  percentageOfWorld1(populations[1]),
+  percentageOfWorld1(populations[2]),
+  percentageOfWorld1(populations[3]),
+];
+
+console.log(percentages);
