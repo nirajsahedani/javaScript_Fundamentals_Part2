@@ -60,3 +60,6 @@ const canadaPopulation4 = describePopulation("canada", 186);
 console.log(chinaPopulation4);
 console.log(indiaPopulation4);
 console.log(canadaPopulation4);
+
+//Assignment-5
+console.log("-------Assignment-5--------");
